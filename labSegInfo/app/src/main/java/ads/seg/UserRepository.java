@@ -7,3 +7,4 @@ public interface UserRepository {
 
     public User findByLogin(String login);
 }
+

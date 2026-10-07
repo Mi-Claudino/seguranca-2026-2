@@ -3,19 +3,9 @@ package ads.seg;
 public class UserService {
 
 
-    private void register() {
-
-        if (!listaUsuarios.containsValue()) {
-
+    private void register(User user) throws UserAlreadyExistsException {
 
             //  throw new UserAlreadyExistsException;
-        }
-        try {
-            throw new UserAlreadyExistsException("msg");
-        } catch (UserAlreadyExistsException e) {
-            throw new RuntimeException(e);
-        }
-
     }
 
     private void updatePassword() {
@@ -24,7 +14,7 @@ public class UserService {
 
     }
     private void authenticate() {
-
+        // throw new InvalidLoginException
     }
 
 
